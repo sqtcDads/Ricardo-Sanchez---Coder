@@ -18,7 +18,7 @@ body {
 main {
   padding: 50px 30px;
   margin: 0 auto;
-  width: 860px;
+  width: 1080px;
 }
 
 .main-header {
@@ -58,6 +58,7 @@ main {
   padding: 0 20px;
   gap: 16px;
   list-style: none;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -86,42 +87,6 @@ main {
 .menu-icon:active {
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
-}
-
-/* Menu for small screens */
-@media screen and (max-width: 768px) {
-  .nav-container {
-    /* width: 100%; */
-    position: sticky;
-    top: 0;
-    height: max-content;
-    background-color: #0c0d13dd;
-    backdrop-filter: blur(3px);
-    padding: 20px 0;
-    justify-content: flex-start;
-  }
-
-  .nav-container label {
-    align-self: flex-start;
-  }
-
-  .menu-icon {
-    display: block;
-    font-size: 32px;
-    padding: 0 20px;
-  }
-
-  .nav-items {
-    display: none;
-    /* display: flex; */
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-item {
-    border: none;
-    align-self: flex-end;
-  }
 }
 
 .nav-item:hover {
