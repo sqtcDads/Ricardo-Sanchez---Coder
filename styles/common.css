@@ -7,6 +7,16 @@
   text-decoration: none;
 }
 
+.btn-primary {
+  background-color: #1f3d54;
+  border-color: #1f3d54;
+}
+
+.btn-primary:hover {
+  background-color: #294e6b;
+  border-color: #294e6b;
+}
+
 body {
   display: flex;
   flex-direction: column;
