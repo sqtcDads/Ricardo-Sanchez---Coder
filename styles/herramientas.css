@@ -14,6 +14,7 @@
 .tools-container a {
   color: #eee;
   display: inline-block;
+  text-decoration: none;
 }
 
 .tool-item {
@@ -43,4 +44,7 @@
 .tool-item:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+span {
+  font-style: italic;
 }
