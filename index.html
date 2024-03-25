@@ -24,8 +24,28 @@
   </head>
 
   <body>
-    <nav class="nav-container">
+    <!-- Web -->
+
+    <nav class="nav-container d-none d-md-flex">
       <ul class="nav-items">
+        <li class="nav-item"><a href="index.html">Glosario</a></li>
+        <li class="nav-item"><a href="herramientas.html">Herramientas</a></li>
+        <li class="nav-item"><a href="estrategia.html">Estrategias</a></li>
+        <li class="nav-item"><a href="wallets.html">Wallets</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile -->
+
+    <div class="mobile-header">
+      <label for="menu-toggle" class="menu-icon btn btn-dark d-md-none"
+        >&#9776;</label
+      >
+    </div>
+
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+    <nav class="nav-container d-block d-md-none nav-container-mobile">
+      <ul class="nav-items nav-items-mobile">
         <li class="nav-item"><a href="index.html">Glosario</a></li>
         <li class="nav-item"><a href="herramientas.html">Herramientas</a></li>
         <li class="nav-item"><a href="estrategia.html">Estrategias</a></li>

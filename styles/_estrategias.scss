@@ -1,13 +1,25 @@
 .strategy-container {
-  display: flex;
-  gap: 20px;
   padding: 20px;
   line-height: 1.2;
 }
 
 .strategy-item {
-  display: inline-block;
 }
 .strategy-item img {
   width: 100%;
+}
+
+.strategy1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  line-height: 1.2;
+  border: 3px solid #335;
+  border-radius: 10px;
+}
+.linea {
+  color: gray;
 }

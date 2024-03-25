@@ -30,7 +30,7 @@ body {
 main {
   padding: 50px 30px;
   margin: 0 auto;
-  width: 100dvw;
+  max-width: 1080px;
 }
 
 .main-header {
@@ -61,6 +61,26 @@ main {
   transition: 0.3s;
 }
 
+#menu-toggle:checked + .nav-container-mobile {
+  display: block !important;
+}
+.nav-container-mobile {
+  display: none !important;
+  height: unset;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.mobile-header {
+  z-index: 100;
+  height: 69px;
+  // background-color: rebeccapurple;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 20px 0 0 20px;
+}
+
 .nav-items {
   display: flex;
   max-width: 720px;
@@ -70,6 +90,12 @@ main {
   gap: 16px;
   list-style: none;
   margin: 0 auto;
+}
+
+.nav-items-mobile {
+  flex-direction: column;
+  position: relative;
+  padding-top: 50px;
 }
 
 .nav-item {
@@ -90,14 +116,12 @@ main {
 }
 
 .menu-icon {
-  display: none;
+  display: block;
+  width: 10%;
+  font-size: 24px;
+  color: white;
   cursor: pointer;
-  align-self: center;
-}
-
-.menu-icon:active {
-  opacity: 0.8;
-  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
 }
 
 .nav-item:hover {
